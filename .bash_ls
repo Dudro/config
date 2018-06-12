@@ -1,0 +1,21 @@
+# enable color support of ls and also add handy aliases
+dircol=~/.dir_colors/dircolors
+if [ -x /usr/bin/dircolors ]; then
+    echo -e "\tRunning dircolors..."
+    test -r $dircol && eval "$(dircolors -b $dircol)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# some more ls aliases
+export LS_COLORSalias ll='ls -alF --color=auto'
+
+alias la='ls -A --color=auto'
+alias l='ls -CF --color=auto'
+alias ls='ls -GFh --color=auto'
+
+
