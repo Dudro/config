@@ -1,20 +1,3 @@
-# Add variable definitions for makara-maven:
-export MAKARA_YOCTO_PATH=~/repositories/makara/makara-yocto
-echo -e "\tExported MAKARA_YOCTO_PATH as $MAKARA_YOCTO_PATH"
-export MAKARA_BUILD_DIR=build-makara
-echo -e "\tExported MAKARA_BUILD_DIR as $MAKARA_BUILD_DIR"
-# Add shortcuts for working directories:
-# for MAKARA
-export MAK=~/repositories/makara/makara-yocto/meta-makara/
-echo -e "\tExported MAK as $MAK"
-
-# for DORADO
-export DOR=~/repositories/dorado/dorado-yocto/meta-dorado/
-echo -e "\tExported DOR as $DOR"
-
-# for other repositories
-export REPS=~/repositories/
-echo -e "\tExported REPS as $REPS"
 
 # export the PATH variable to include the current users bin directory
 path="/home/$USER/bin"
